@@ -1,0 +1,12 @@
+h1{
+    color: blue;
+}
+
+.nav {
+    list-style: none;
+    padding: 0;
+}
+
+.nav li{
+    display: inline;
+}
