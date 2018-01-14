@@ -1,12 +1,23 @@
-h1{
-    color: blue;
+.logo{
+    text-transform: uppercase;
 }
 
 .nav {
     list-style: none;
     padding: 0;
+    text-align: right;
 }
 
 .nav li{
     display: inline;
+    margin: 0 10px;
+    font-size: 25px;
+}
+
+.horizontal-center{
+    width: 400px;
+    background: blue;
+    color: white;
+    padding: 20px;
+    margin: 10px auto;
 }
