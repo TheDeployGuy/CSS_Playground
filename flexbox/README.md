@@ -2,9 +2,18 @@
 Flexbox - allows you to arrange items within a contiainer
 
 [Video #1](https://www.youtube.com/watch?v=JJSoEo8JSnc)
+[Video #2](https://www.youtube.com/watch?v=Y8zMYaD1bz0)
+
 - Do not have to use Floats to arrange elements
 - Responsive and Mobile Friendly
 - Order of elements can be changed without the changing the source HTML.
+- Allows us to control the position, size and space of elements relative to their parent elements and each other.
+
+# Benefits
+- Navigation bars + Menus
+- Grid layouts
+- Bar Charts
+- Equal height columns
 
 # Concepts
 - Alter width and height to best git in its containers
