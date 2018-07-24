@@ -28,11 +28,14 @@ Flex container properties:
   - flex-direction: row | column - Default is row
   - align-items: flex-start | center | flex-end | stretch*
   - justify-content: flex-start* | center | flex-end | space-between | space-around (margins on side)
+     - This is centering horizontally.
   - flex-wrap: wrap (wrap flex items around)
 
 Flex item properties:
   - flex: 2, take up 2x as much spaces as rest of elements, flex: 3, take up 3x as much space etc...
   - order: 1 will be placed at the start, this can be used to rearrange elements without editing the html although this is not a good idea due to accessibility. 
   - flex-basis: better way to define widths for columns
+  - flex-grow is a way of defining how many columns we want an element to take up
+    - e.g. flex-grow of (4, 6, 2) on 3 elements would be like a bootstrap grid of 12. (2, 3, 1) could also be used as its a rate.
 
   

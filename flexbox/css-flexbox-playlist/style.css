@@ -16,6 +16,8 @@ body{
 .flex-container {
     /* Default each of the flex items to row */
     display: flex;
+    background: white;
+    justify-content: center;
 }
 
 .box {
@@ -26,12 +28,17 @@ body{
 
 .one{
     background: blue;
+    /* Take up available space, growth rate */
+    /* flex-grow: 4; */
 }
 
 .two{
     background: white;
+    /* Take up available space, growth rate */
+    /* flex-grow: 6; */
 }
 
 .three{
     background: red;
+    /* flex-grow: 2 */
 }
