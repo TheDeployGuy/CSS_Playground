@@ -17,28 +17,30 @@ body{
     /* Default each of the flex items to row */
     display: flex;
     background: white;
-    justify-content: center;
+    /* justify-content: center; */
+    /* Wrap elements when they can no longer shrink */
+    flex-wrap: wrap;
 }
 
 .box {
     height: 100px;
-    min-width: 100px;
+    flex: 1 0 200px;
 }
 
 
 .one{
     background: blue;
     /* Take up available space, growth rate */
-    /* flex-grow: 4; */
+    /* flex-grow: 1; */
 }
 
 .two{
     background: white;
     /* Take up available space, growth rate */
-    /* flex-grow: 6; */
+    /* flex-grow: 1; */
 }
 
 .three{
     background: red;
-    /* flex-grow: 2 */
+    /* flex-grow: 1; */
 }
