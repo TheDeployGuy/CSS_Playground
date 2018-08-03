@@ -21,7 +21,9 @@ Flexbox - allows you to arrange items within a contiainer
 - Used for small-scale layouts
 
 Flex containers contain flex items.
-Flex has 2 axis, main and cross axis.
+Flex has 2 axis, main and cross axis. Axis are affected by flex-direction, by default flex-direction is row. When the flex-direction is row the main axis goes from left to right across the screen and the cross axis is from top to bottom. When flex-direction is changed to column the axises switch. Main is now top to bottom and cross is now left to right. This is extremely important as some flex properties only affect certain axises. For example:
+- justify-content affects the main axis
+- align-items affects the cross axis
 
 Flex container properties:
   - display: flex | inline-flex
