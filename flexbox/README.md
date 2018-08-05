@@ -1,5 +1,23 @@
 
-Flexbox - allows you to arrange items within a contiainer
+#CSS
+BEM - Block Element Modifer is a way of naming your CSS classes.
+
+Block - is a standalone component that is reuseable across a project or even between projects.
+Element - Elements make no sense being along, they are tightly connected to their parent which are blocks.
+Modifier - is a Flad added to block or element to make it more specific. They usually contain rules like color or size
+```css
+   /* Styling the Block component e.g. Card, Nav */
+  .block {}
+  (e.g: .btn)
+  /* Styling the element of a block e.g. card__item, nav__item */
+  .block__element {}
+  (e.g: .btn__text)
+  /* Styling the modifier of an element e.g. card__item--success, nav__item--big */
+  .block__element--modifier {}
+  (e.g: .btn--big)
+```
+
+#Flexbox - allows you to arrange items within a contiainer
 
 [Video #1](https://www.youtube.com/watch?v=JJSoEo8JSnc)
 [Video #2](https://www.youtube.com/watch?v=Y8zMYaD1bz0)
