@@ -86,3 +86,19 @@ Since Grid is a grid if you set explicit width or heights e.g.: ```width:300px``
 ## Placing Grid Items
 ```grid-column-start and grid-column-end``` can be used to specific set where on your grid you want to place your items. It uses the track numbers so ```grid-column-start:2 + grid-column-end:5``` would start the item at 2 and end it at 5. There is a shorthand for this which is ```grid-column: 2 / 5```. Above applied to rows as well ```grid-row*```. You can use ``` 1 / -1``` for the setting to span it across the entire width or height of the grid. 1 / -1 will only work when you have explicially set the grid-template columns and rows.
 
+## Auto Fit, Auto Fill and minmax
+
+```auto-fill``` can be used with ```grid-template-columns or grid-template-rows``` to tell css grid to figure out the row and/or column structure itself. You don't tell it take 2 columns just figure it out based on the size of the items.  e.g: This can be used if you want an element to be right aligned in a column. 
+
+```auto-fit``` can be used with ```grid-template-columns or grid-template-rows``` to tell css grid is works exactly like ```auto-fill`` except it only makes the grid col or row the exact size to fit all the elements(useful when you have less elements).
+
+```min-max``` tell css grid to give a grid element a min and max size. A common value for this would be ```minmax(Xpx, 1fr)``` meaning take up Xpx minimum but the max size is the entire width (exactly like a media query). (Used with auto-fit it can allow for nice wrapping elements)
+
+## Grid Template Areas
+Allow you to name parts of your grid. Lets say you have a 3 columns, 3 row layout you can name them easily like so:
+```grid-template-areas: 
+  "sidebar-1 content sidebar-2"
+  "sidebar-1 content sidebar-2"
+  "footer footer footer"
+```
+Thats great but the most powerful part is you can place items using the actual names instead of the line numbers which is extremely powerful. This can be done using the ```grid-area``` property e.g: ```grid-area: footer```. Even more powerful is the use of ```grid-template-areas``` in media queries. You can completely change the layout of your website by just adjusting the media queries.
