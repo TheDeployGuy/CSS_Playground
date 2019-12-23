@@ -4,4 +4,6 @@ If you have ever done web development before you have seen the issue where you h
 
 All you need to do is have a height:auto on your image selector and a width and height set in your image tag. When the browser sees height:auto, it will take the values specified in the image tag and set the width and height accordingly. Now when you load the page there is the perfect amount of space for your image to load! no more jumping text!
 
+
+
 https://youtu.be/eCGW0FKZ1gg?t=194
